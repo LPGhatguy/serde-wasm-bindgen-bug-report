@@ -1,0 +1,12 @@
+{
+  "name": "bug",
+  "version": "0.0.0",
+  "devDependencies": {
+    "mtg": "file:pkg",
+    "parcel": "^2.0.1"
+  },
+  "scripts": {
+    "build-wasm": "wasm-pack build --target web",
+    "start": "npm run build-wasm && parcel serve js/index.html"
+  }
+}
